@@ -32,3 +32,16 @@ body {
 ***
 
 También dispone de operaciones aritmétcas en SASS se hace como en cualquier otro lenguaje, mientras que en CSS necesitamos la función calc().
+
+***
+##Interpolacion
+Una gran ventaja es que no sólo podemos guardar valores, sino el dato que deseemos e interporlar la variable. El uso más frecuente de esto es el de poder crear selectores con variables. 
+Ejemplo:
+```
+$red: red;
+
+// Compila a .container.red 
+.container.#{$red} {
+  color: $red;
+}
+```
